@@ -1,11 +1,17 @@
 package com.fitness.controller;
 
+import com.fitness.dto.RegisterRequest;
 import com.fitness.dto.UserResponse;
+import com.fitness.service.UserService;
+import jakarta.validation.Valid;
+import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/user")
+@AllArgsConstructor
 public class userController {
 
     private UserService userService;
