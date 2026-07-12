@@ -17,7 +17,7 @@ public class userController {
     private UserService userService;
 
     @GetMapping("/{userid}")
-    public ResponseEntity<UserResponse> getUserProfile(@PathVariable String userId){
+    public ResponseEntity<UserResponse> getUserProfile(@PathVariable("userid") String userId){
         return ResponseEntity.ok(userService.getUserProfile(userId));
     }
 

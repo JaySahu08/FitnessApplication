@@ -5,8 +5,7 @@ spring:
     url: jdbc:postgresql://localhost:5432/fitness_user_db
     username: postgres
     password: admin@1234
-    jpa:
-      hibernate:
-        ddl-auto: update
-      database-platfrom: org.hibernate.dialect.PostgreSQLDialect
-
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
