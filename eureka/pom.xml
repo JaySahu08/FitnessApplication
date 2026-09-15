@@ -5,14 +5,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.4.5</version>
+		<version>3.4.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.server</groupId>
 	<artifactId>eureka</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name/>
-	<description/>
+	<name>eureka</name>
+	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -27,8 +27,8 @@
 		<url/>
 	</scm>
 	<properties>
-		<java.version>21</java.version>
-		<spring-cloud.version>2024.0.1</spring-cloud.version>
+		<java.version>17</java.version>
+		<spring-cloud.version>2024.0.0</spring-cloud.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -59,9 +59,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<mainClass>com.server.eureka.EurekaApplication</mainClass>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>

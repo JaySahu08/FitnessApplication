@@ -13,7 +13,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 import java.time.LocalDateTime;
 import java.util.Map;
 
-@Document (collection = "activities")
+@Document(collection = "activities")
 @Data
 @Builder
 @AllArgsConstructor
@@ -32,6 +32,7 @@ public class Activity {
 
     @CreatedDate
     private LocalDateTime createdAt;
+
     @LastModifiedDate
     private LocalDateTime updatedAt;
 }
